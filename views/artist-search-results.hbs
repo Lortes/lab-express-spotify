@@ -1,0 +1,22 @@
+<div class=" p-4 text-center" style="background-color: rgb(22, 22, 22);">
+    <h1 style="color: white;">ARTISTS</h1>
+
+    <div class="container">
+
+        <div class="row d-flex justify-content-around">
+            {{#each artistList}}
+            <div class="col-md-4 p-4 mb-2">
+
+                <article class="card p-3 mb-3">
+                    <img class="artist-img" src="{{images.[0].url}}" alt="{{name}}">
+                    <p class="pt-2 pb-2"><strong>Name:</strong> {{name}}</p>
+                    <a href="/albums/{{id}}" class="btn btn-dark"> View Albums </a>
+                    {{!-- <p><strong>Description:</strong> {{description}}</p> --}}
+                </article>
+
+            </div>
+            {{/each}}
+        </div>
+
+    </div>
+</div>
